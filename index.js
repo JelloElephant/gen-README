@@ -12,8 +12,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Give a short discription on your project',
-        name: 'discription',
+        message: 'Give a short description on your project',
+        name: 'description',
     },
     {
         type: 'input',
@@ -22,11 +22,11 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Discribe some of the usage for your project',
+        message: 'Describe some of the usage for your project',
         name: 'usage',
     },
     {
-        type: 'choice',
+        type: 'list',
         message: 'Choose a License for your project',
         name: 'license',
         choices: ['MIT', 'GNU AGPLv3', 'GNU GPLv3', 'Boost Software Liscense', 'Apache']
@@ -55,10 +55,10 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.prmopt(questions)
+    inquirer.prompt(questions)
     .then(answers => {
-        var rEADME = genMarkdown.generateMarkdown(answers)
-        writeToFile(`${questions}`, rEADME)
+        var rEADME = genMarkdown(answers)
+        writeToFile(`READ_ME`, rEADME)
     })
 }
 
