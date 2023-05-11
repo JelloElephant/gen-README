@@ -1,4 +1,4 @@
-# gen-README# gen-README
+# gen-README
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 A commandline tool to help generate READMEs quickly and to a professional standard
