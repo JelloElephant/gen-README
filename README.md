@@ -7,7 +7,7 @@ A commandline tool to help generate READMEs quickly and to a professional standa
 ## Installation
 
 
-[MIT Licsnse](https://choosealicense.com/licenses/mit/)
+[MIT License](https://choosealicense.com/licenses/mit/)
 
 ## Usage
 Easily creating README.md files for projects
