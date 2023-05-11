@@ -46,11 +46,16 @@ const questions = [
         message: 'Enter your GitHub username',
         name: 'userName',
     },
+    {
+        type: 'input',
+        message: 'Enter your email address',
+        name: 'email',
+    }
 ];
 
 // Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.appendFile(`${fileName}.txt`, data, (err) => err ? console.log(err) : console.log('done!') );
+    fs.appendFile(`${fileName}.md`, data, (err) => err ? console.log(err) : console.log('done!') );
 }
 
 // TODO: Create a function to initialize app
@@ -58,7 +63,7 @@ function init() {
     inquirer.prompt(questions)
     .then(answers => {
         var rEADME = genMarkdown(answers)
-        writeToFile(`READ_ME`, rEADME)
+        writeToFile(`README`, rEADME)
     })
 }
 
