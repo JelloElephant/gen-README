@@ -68,7 +68,7 @@ ${renderLicenseSection(data.license)}
 ${data.tests}
 
 ## Questions
-For more projects or for qny questions/concerns about this project contact [${data.userName}](https://github.com/${data.userName}) at [${data.email}](${data.email})
+For more projects or for any questions/concerns about this project contact [${data.userName}](https://github.com/${data.userName}) at [${data.email}](${data.email})
 
 `;
 }
